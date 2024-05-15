@@ -18,7 +18,7 @@ export const MenuItem: React.FC<MenuItemProps> = (props) => {
   });
 
   const handleClick = () => {
-    if (context.onSelect && typeof index === 'number') {
+    if (context.onSelect && typeof index === 'string') {
       context.onSelect(index);
     }
   };

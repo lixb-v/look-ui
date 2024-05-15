@@ -1,0 +1,14 @@
+// 练习：定义集合
+// $sizes: 10px, 20px, 30px, 40px, 50px;
+// @each $size in $sizes {
+//   .size-#{$size} {
+//     font-size: $size;
+//   }
+// }
+
+
+@each $key, $val in $theme-colors {
+  .icon-#{$key} {
+    color: $val;
+  }
+}
